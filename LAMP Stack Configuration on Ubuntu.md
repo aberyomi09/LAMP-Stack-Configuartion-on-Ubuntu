@@ -39,7 +39,7 @@ As we know, we have TCP port 22 open by default on our EC2 machine to access it
 via SSH, so we need to **add a rule to EC2 configuration to open inbound
 connection through port 80**:
 
-![](media/02df4fc3a76683bfc91ab7b292f50ed4.png)
+![Inbound rules](https://user-images.githubusercontent.com/66855448/152492344-dbcaad5c-5990-4dbd-8148-2da513ee2cb0.PNG)
 
 Our server is running and we can access it locally and from the Internet (Source
 0.0.0.0/0 means ‘from any IP address’).
@@ -79,7 +79,7 @@ web browsers use port 80 by default.
 If you see following page, then your web server is now correctly installed and
 accessible through your firewall.
 
-![](media/087be941d7b26c4ff3b021d7471b516e.png)
+![apache_ubuntu_default](https://user-images.githubusercontent.com/66855448/152492394-50c816b7-ef34-4745-b399-de23b3c606ad.png)
 
 **STEP 2 — INSTALLING MYSQL**
 
@@ -101,7 +101,7 @@ the interactive script by running:
 
 *\#sudo mysql_secure_installation*
 
-*![](media/958e3619aaea97f04191bee2efd46d60.png)*
+![Mysql secure installation](https://user-images.githubusercontent.com/66855448/152492441-d7b77768-b51b-4fc8-8313-e8724314c148.PNG)
 
 This will ask if you want to configure the VALIDATE PASSWORD PLUGIN.
 
@@ -141,7 +141,7 @@ typing:
 
 *\#sudo mysql*
 
-*![](media/f5c1bb2aab313798099eb78fdd04d147.png)*
+![sudo mysql](https://user-images.githubusercontent.com/66855448/152492491-a11af7a0-acad-4fc1-a8d6-1a51b3a86240.PNG)
 
 This will connect to the MySQL server as the administrative database user root,
 which is inferred by the use of sudo when running this command. You should see
@@ -195,7 +195,7 @@ your PHP version:
 
 *\#php –v*
 
-*![](media/41f1e7082af9587c7909d3fd130afe48.png)*
+![php -v](https://user-images.githubusercontent.com/66855448/152492563-30acf367-4691-4e34-bc44-68e234e79920.PNG)
 
 **At this point, your LAMP stack is completely installed and fully
 operational.**
@@ -213,8 +213,7 @@ Virtual Host to hold your website’s files and folders. Virtual host allows you
 to have multiple websites located on a single machine and users of the websites
 will not even notice it.
 
-![C:\\Users\\armani\\Desktop\\DevOps Mentorship\\Virtual
-host.png](media/681ae31e9f76a6ad44ff21682d3f3281.png)
+![Virtual host](https://user-images.githubusercontent.com/66855448/152492827-7c4c6f0d-4540-4f3b-9efe-856cd815b97d.png)
 
 We will configure our first Virtual Host in the next step.
 
@@ -381,8 +380,7 @@ inside the file:
 When you are finished, save and close the file, refresh the page and you will
 see a page similar to this:
 
-![C:\\Users\\armani\\Desktop\\DevOps
-Mentorship\\phpinfo.png](media/ba98523693e93ea9811e5bca5ea6e5c4.png)
+![phpinfo](https://user-images.githubusercontent.com/66855448/152492766-7f2d0b8f-c2e1-431c-b33e-a99403e36fde.png)
 
 This page provides information about your server from the perspective of PHP. It
 is useful for debugging and to ensure that your settings are being applied
